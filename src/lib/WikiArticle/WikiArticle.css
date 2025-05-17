@@ -1,0 +1,25 @@
+.wiki-article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+h2 {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid #ff3e00;
+  padding-bottom: 8px;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+:global(.term-highlight) {
+  cursor: help;
+  text-decoration: underline dotted;
+  font-weight: 500;
+  color: #ff3e00;
+}

@@ -1,0 +1,19 @@
+.svelte-kit
+.env
+.env.*
+!.env.example
+!.env.test
+
+node_modules
+.output
+.vercel
+.netlify
+.wrangler
+.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+package-lock.json

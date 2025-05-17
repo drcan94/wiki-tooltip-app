@@ -1,0 +1,145 @@
+.examples-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow tabs to wrap on small screens */
+}
+
+.tab-btn {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+}
+
+.tab-btn:first-child {
+  background: #ff3e00;
+  color: white;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.example-column {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.example-item {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  word-break: break-word; /* Prevent text overflow */
+}
+
+button {
+  padding: 8px 16px;
+  background: #ff3e00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tooltip-example,
+.action-example {
+  display: inline-block;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: help;
+  border: 1px dashed #ff3e00;
+}
+
+.action-example {
+  border-color: #0366d6;
+  background: #e6f7ff;
+}
+
+.title {
+  color: #ff3e00;
+  margin-top: 0;
+  cursor: help;
+}
+
+.info-box {
+  margin-top: 30px;
+  padding: 15px;
+  background: #e6f7ff;
+  border-left: 4px solid #0366d6;
+  border-radius: 4px;
+}
+
+.code-hint {
+  font-family: monospace;
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  overflow-x: auto; /* Add scrolling for code blocks if needed */
+}
+
+code {
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .examples-grid {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+  }
+
+  .examples-container {
+    padding: 15px; /* Smaller padding on mobile */
+  }
+
+  .example-column {
+    margin-bottom: 20px; /* Add space between stacked columns */
+  }
+
+  .tabs {
+    justify-content: center; /* Center tabs on mobile */
+  }
+
+  .tab-btn {
+    width: 100%; /* Full width buttons on very small screens */
+    text-align: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .example-item {
+    padding: 10px; /* Smaller padding on very small screens */
+  }
+
+  h2,
+  h3 {
+    font-size: 1.2rem; /* Smaller headings on mobile */
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
